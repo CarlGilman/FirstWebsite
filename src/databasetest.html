@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1> My products database integration </h1>
+
+	<?php
+		
+		//create a database connection
+		$dbhost = "localhost";
+		$dbuser = "root";
+		$dbpassword = "";
+		$dbname = "g00411268";
+		
+		$connection = mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname);
+		
+		
+		
+		if(mysqli_connect_errno()){
+			die("DB Connection Failed: " .
+				mysqli_connect_error() . 
+					" (" . mysqli_connect_errorno()
+						. ")"
+						);
+		}
+		
+if (!$connection)
+	{
+		die('Could not Connect: ' .
+		mysqli_error());
+	}
+
+	$sql = "select * FROM products WHERE ID = '1';";
+	
+	$result = mysqli_query($connection,$sql);
+	$row = mysqli_fetch_assoc($result);
+	
+	echo "value retrieved: 
+	" . $row ['ID'];
+	
+	
+	
+</body>
+
+<script>
+
+var jsvar = "<?php echo $row ['name'] ?>";
+alert(jsvar);
+
+
+</script>
+
+</html>

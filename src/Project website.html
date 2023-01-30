@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--meta data information for the webpage-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- references for CSS page and Javascript page-->
+<link rel="stylesheet" href="./index.css">
+<script src="./index.js"></script> 
+</head>
+<body>
+<!-- banner across top of page incl. pictures and buttons-->
+<div class="banner">
+	<div class="banner__content">
+		<div class="banner__text">
+		<img src="images/card.jpg" width="250" height="125">	
+	
+
+&ensp;&ensp;&ensp;&nbsp;<button id="loginBtn" class="headerbuttons" >Log In </button>
+
+
+<button id="shoppingCart" class="headerbuttons">Shopping Cart</button>
+
+<button class="headerbuttons"> About Paula </button>
+
+<button class="headerbuttons"> FAQ </button>
+
+<button class="headerbuttons">Contact Me!</button>
+
+&ensp;&ensp;&ensp;&nbsp;<img src="images/card.jpg" width="250" height="125">	
+
+<!-- modal used for shopping cart-->
+<div id="shoppingModal" class="modal">
+<div class="modal-content">
+<p> Total Cost: </p>
+<p id='totalPrice'></p>
+
+<h1> Shopping Cart Items </h1>
+<button onclick="buyNowButton()"> Buy Now </button>
+	<span id='shoppingCartClose' class="close">X</span>
+	<ul id="shoppingCartItems">
+	</ul>
+</div>
+</div>
+<!-- page header-->
+<h1 class="handmadeHeader">Handmade By Paula</h1>
+
+
+<div id="myModal" class="modal">
+
+	
+  </div>
+
+</div>
+<!-- slideshow container and style-->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/rainbowthrow.jpg" style="width: 100%">
+  <div class="text" ;></div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="images/shoppingbag.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/MosaicBlanket.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+<!-- three dots representing each image-->
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<!-- list of products available for purchase w/ class and details-->
+	<section>
+		<ul class='products'>
+			<li class='productSell'>
+				<img class="productImg" src="images/Blanket.jpg">
+				<h1 class='productName'> Blanket </h1>
+				<p class='productPrice'> € 70.00 </p>
+				<button class='addToCart'> Add to Cart </button>
+				
+			</li>
+			<li class='productSell'>
+				<img class="productImg" src="images/ChristmasBaubles.jpg">
+				<h1 class='productName'> Christmas Baubles</h1>
+				<p class='productPrice'> €6.00</p>
+				<button class='addToCart'> Add to Cart </button>
+			</li>
+			<li class='productSell'>
+				<img class="productImg" src="images/sheep.jpg">
+				<h1 class='productName'> Crochet Sheep Plush</h1>
+				<p class='productPrice'> €25.00 </p>
+				<button class='addToCart'> Add to Cart </button>
+			</li>
+			<li class='productSell'>
+				<img class="productImg" src="images/stars.jpg">
+				<h1 class='productName'> Hanging Stars</h1>
+				<p class='productPrice'> €5.00 </p>
+				<button class='addToCart'> Add to Cart </button>
+			</li>
+			<li class='productSell'>
+				<img class="productImg" src="images/Wallhanging.jpg">
+				<h1 class='productName'> Wall Hanging </h1>
+				<p class='productPrice'> €60.00 </p>
+				<button class='addToCart'> Add to Cart </button>
+			</li>
+			<li class='productSell'>
+				<img class="productImg" src="images/Mosaic.jpg">
+				<h1 class='productName'> Mosaic Blanket </h1>
+				<p class='productPrice'> €120.00 </p>
+				<button class='addToCart'> Add to Cart </button>
+			</li>
+		</ul>
+			
+
+</body>
+</html>
