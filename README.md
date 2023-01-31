@@ -1,6 +1,8 @@
 # FirstWebsite
 This project was for my web applications development class where we had to create a website with basic functionality and a shopping cart.
 
+Code can be viewed and edited in some form of text editor, i used notepad ++, to view the website please run the HTML file using your browser of chosing, I used google chrome.
+
 Firstly, The project has been split into HTML, JavaScipt and CSS files. This allows for easier implementation and keep all differnt coding languages separate but still able to work with eachother effectively. 
 
 The ProjectWebsite.HTML file works as the basis of the project. This includes the references to the CSS and Javascript pages so that they can effect the overall HTML.
